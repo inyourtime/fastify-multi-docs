@@ -9,6 +9,7 @@ declare namespace fastifyMultiDocs {
   export interface FastifyMultiDocsOptions {
     documents: Array<Document>;
     scalarUi?: boolean;
+    routePrefix?: string;
   }
 
   interface Document {

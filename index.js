@@ -27,7 +27,7 @@ async function fastifyMultiDocs (fastify, opts) {
 
   // register route
   fastify.register(route, {
-    prefix: '/docs',
+    prefix: opts.routePrefix || '/docs',
     ...opts,
   })
 }
